@@ -58,7 +58,7 @@ git clone https://github.com/exoscale-labs/clojure-workshop.git
 * Or just download it
 [source,bash]
 ----
-wget https://github.com/exoscale-labs/clojure-workshop/master/clojure-workshop.ipynb
+wget https://github.com/exoscale-labs/clojure-workshop/blob/master/clojure-workshop.ipynb
 ----
 
 === Run the notebook
