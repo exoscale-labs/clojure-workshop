@@ -1,0 +1,85 @@
+= Clojure workshop
+Author <nicolas dot frankel at exoscale dot com>
+v1.0, 2019-01-29
+
+:toc:
+:imagesdir: images
+
+== Installation instructions
+
+The workshop is written as a https://jupyter.org/[Jupyter notebook^].
+Notebooks offer a quick feedback loops when learning a new language.
+
+To make the setup easier, a Docker image is provided.
+
+=== Run the Docker image:
+
+[source,bash]
+----
+$ docker run --name clojupyter -p 8888:8888 kxxoling/jupyter-clojure-docker
+----
+
+----
+Unable to find image 'kxxoling/jupyter-clojure-docker:latest' locally
+latest: Pulling from kxxoling/jupyter-clojure-docker
+a48c500ed24e: Pull complete 
+1e1de00ff7e1: Pull complete 
+0330ca45a200: Pull complete 
+471db38bcfbf: Pull complete 
+0b4aba487617: Pull complete 
+4ea186a1cb7d: Pull complete 
+f5e496074605: Pull complete 
+5cbe8ddcb7a8: Pull complete 
+Digest: sha256:d36f65719334f9c127026604da8cdd0be69fabfa1ef75189a142670a1c4fa3a6
+Status: Downloaded newer image for kxxoling/jupyter-clojure-docker:latest
+[I 15:11:23.874 NotebookApp] Writing notebook server cookie secret to /home/clojure/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 15:11:24.055 NotebookApp] Serving notebooks from local directory: /home/clojure/notebooks
+[I 15:11:24.055 NotebookApp] 0 active kernels
+[I 15:11:24.055 NotebookApp] The Jupyter Notebook is running at:
+[I 15:11:24.056 NotebookApp] http://0.0.0.0:8888/?token=d08380a1b47e2553c4fbd8d35ccc0b00fff94999a8556279
+[I 15:11:24.056 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 15:11:24.057 NotebookApp] No web browser found: could not locate runnable browser.
+[C 15:11:24.058 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://0.0.0.0:8888/?token=d08380a1b47e2553c4fbd8d35ccc0b00fff94999a8556279
+----  
+
+=== Get the notebook
+
+* You can either clone the repo to benefit from the latest updates:
+
+[source,bash]
+----
+git clone https://github.com/exoscale-labs/clojure-workshop.git
+----
+
+* Or just download it
+[source,bash]
+----
+wget https://github.com/exoscale-labs/clojure-workshop/master/clojure-workshop.ipynb
+----
+
+=== Run the notebook
+
+. Open a browser to <http://0.0.0.0:8888/>
++
+image:emptynotebook.png[]
++
+. Click on btn:[Upload]
+. Select the notebook file - `clojure-workshop.ipynb`
++
+image:readytoupload.png[]
++
+. Confirm the upload by clicking on the blue btn:[Upload] button
++
+image:uploaded.png[]
++
+. Click on the http://0.0.0.0:8888/notebooks/clojure-workshop.ipynb[clojure-workshop.ipynb^]
++
+image:workshop.png[]
++
+. Wait until the "Kernel is starting message" has disappeared
+. Follow the instructions in the notebook
+. Enjoy the workshop!
